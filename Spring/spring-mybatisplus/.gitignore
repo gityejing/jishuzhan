@@ -1,0 +1,7 @@
+/target/
+/.settings/
+/.classpath
+/.project
+/file.log
+/rolling.log
+/rolling.log.1

@@ -1,0 +1,1 @@
+单纯的spring和jpa的整合使用，具体的实现采用hibernate框架

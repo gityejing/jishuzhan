@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b1425be7-a2df-4fec-b597-17d75906a9fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../MyBatis_01_HelloWorld/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_02_config/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_03_mapper/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_04_DynamicSQL/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_05_cache/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_05_cache/bin/com/atguigu/mybatis/test/MyBatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_05_cache/bin/com/atguigu/mybatis/test/MyBatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_07_mbg/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_09_source/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_09_source/bin/com/atguigu/mybatis/test/MyBatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_09_source/bin/com/atguigu/mybatis/test/MyBatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_09_source/src/com/atguigu/mybatis/test/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_09_source/src/com/atguigu/mybatis/test/MyBatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_10_plugin/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_10_plugin/bin/com/atguigu/mybatis/dao/MyFirstPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_10_plugin/bin/com/atguigu/mybatis/dao/MyFirstPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_11_other/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_11_other/bin/com/atguigu/mybatis/bean/EmpStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_11_other/bin/com/atguigu/mybatis/bean/EmpStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_11_other/bin/com/atguigu/mybatis/test/MyBatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_11_other/bin/com/atguigu/mybatis/test/MyBatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatis_11_other/bin/com/atguigu/mybatis/typehandler/MyEnumEmpStatusTypeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatis_11_other/bin/com/atguigu/mybatis/typehandler/MyEnumEmpStatusTypeHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="814568243">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="47" />
+          <entry key="md" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="14" />
+          <entry key="xsd" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="47" />
+          <entry key="Markdown" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2512" />
+          <entry key="md" value="256" />
+          <entry key="txt" value="69" />
+          <entry key="xml" value="549" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2512" />
+          <entry key="Markdown" value="256" />
+          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="SQL" value="25" />
+          <entry key="XML" value="524" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.go.postfix.template.usages.trigger" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getBooks</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/com/mybatisplusdemo/ConditionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/entity/Book.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/gen/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mybatisplusdemo/ARTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mybatisplusdemo/DaoplusTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/dao/BookMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/dao/BookDAO.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/beans.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\.m2\repository" />
+        <option name="mavenHome" value="D:/javasystem/maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\javasystem\maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mybatisplus-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="mybatisplus-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.baomidou:mybatis-plus:2.3.3" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="mybatisplus-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.baomidou:mybatis-plus:2.3.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="mybatis-plus-2.3.3.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatisplus-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.baomidou:mybatis-plus:2.3.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="mybatis-plus-2.3.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatisplus-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="pom.xml&#9;FILE&#9;file://D:/src/jishuzhan/spring-mybatisplus/pom.xml&#10;bean.xml&#9;FILE&#9;file://D:/src/jishuzhan/spring-mybatisplus/src/main/resources/beans.xml" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542182151988" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.DaoplusTest.testSelect2">
+    <configuration name="ARTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatisplusdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatisplusdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatisplusdemo.ARTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoplusTest.testDel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatisplusdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatisplusdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatisplusdemo.DaoplusTest" />
+      <option name="METHOD_NAME" value="testDel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoplusTest.testSelect1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatisplusdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatisplusdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatisplusdemo.DaoplusTest" />
+      <option name="METHOD_NAME" value="testSelect1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoplusTest.testSelect2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatisplusdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatisplusdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatisplusdemo.DaoplusTest" />
+      <option name="METHOD_NAME" value="testSelect2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBookService.testGetAllBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybatisplusdemo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mybatisplusdemo.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mybatisplusdemo.test.TestBookService" />
+      <option name="METHOD_NAME" value="testGetAllBooks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ARTest.testSelect" />
+      <item itemvalue="JUnit.DaoplusTest.testSelect1" />
+      <item itemvalue="JUnit.TestBookService.testGetAllBooks" />
+      <item itemvalue="JUnit.DaoplusTest.testSelect2" />
+      <item itemvalue="JUnit.DaoplusTest.testDel" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DaoplusTest.testSelect2" />
+        <item itemvalue="JUnit.DaoplusTest.testDel" />
+        <item itemvalue="JUnit.DaoplusTest.testSelect1" />
+        <item itemvalue="JUnit.TestBookService.testGetAllBooks" />
+        <item itemvalue="JUnit.ARTest.testSelect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1425be7-a2df-4fec-b597-17d75906a9fb" name="Default Changelist" comment="" />
+      <created>1542112709055</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542112709055</updated>
+      <workItem from="1542112710923" duration="7315000" />
+      <workItem from="1542151110353" duration="5642000" />
+      <workItem from="1542165446856" duration="10126000" />
+      <workItem from="1542186938415" duration="22000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加了mybatisplus的条件查询案例">
+      <created>1542117945989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542117945989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加了mybatisplus的条件查询案例">
+      <created>1542118137031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542118137031</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加了mybatisplus的Active Record模式的例子">
+      <created>1542119164458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542119164458</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加了mybatisplus的Active Record模式的例子">
+      <created>1542178896869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542178896869</updated>
+    </task>
+    <task id="LOCAL-00005" summary="增加了mybatisplus的Active Record模式的例子">
+      <created>1542178976257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542178976257</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 25m 49s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 26m 34s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 27m 02s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 28m 49s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 35m 21s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 37m 20s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testDel - 2018.11.14 at 14h 39m 11s.xml">
+      <configuration name="DaoplusTest.testDel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 40m 49s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 44m 29s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoplusTest_testSelect2 - 2018.11.14 at 14h 51m 44s.xml">
+      <configuration name="DaoplusTest.testSelect2" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="23105000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16263238" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3942953" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.301059" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3942953" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加了mybatisplus的条件查询案例" />
+    <MESSAGE value="增加了mybatisplus的Active Record模式的例子" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了mybatisplus的Active Record模式的例子" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mybatisplusdemo/ConditionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="160" column="9" lean-forward="true" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-generate/2.3.3/mybatis-plus-generate-2.3.3-sources.jar!/com/baomidou/mybatisplus/generator/engine/FreemarkerTemplateEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-generate/2.3.3/mybatis-plus-generate-2.3.3-sources.jar!/com/baomidou/mybatisplus/generator/config/TemplateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/gen/CodeGenerator.java" />
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-support/2.3.3/mybatis-plus-support-2.3.3-sources.jar!/com/baomidou/mybatisplus/activerecord/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-core/2.3.3/mybatis-plus-core-2.3.3-sources.jar!/com/baomidou/mybatisplus/spring/MybatisMapperRefresh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-support/2.3.3/mybatis-plus-support-2.3.3-sources.jar!/com/baomidou/mybatisplus/plugins/pagination/PageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-core/2.3.3/mybatis-plus-core-2.3.3-sources.jar!/com/baomidou/mybatisplus/plugins/PaginationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1471">
+          <caret line="155" column="29" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-core/2.3.3/mybatis-plus-core-2.3.3-sources.jar!/com/baomidou/mybatisplus/plugins/OptimisticLockerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3025">
+          <caret line="147" column="47" lean-forward="true" selection-start-line="147" selection-start-column="47" selection-end-line="147" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-core/2.3.3/mybatis-plus-core-2.3.3-sources.jar!/com/baomidou/mybatisplus/plugins/PerformanceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3435">
+          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-core/2.3.3/mybatis-plus-core-2.3.3.jar!/com/baomidou/mybatisplus/spring/MybatisMapperRefresh.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/test/TestBookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mybatisplusdemo/ARTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-core/2.3.3/mybatis-plus-core-2.3.3-sources.jar!/com/baomidou/mybatisplus/spring/MybatisSqlSessionFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="78" column="82" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/config/mybatis-spring-1.2.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-support/2.3.3/mybatis-plus-support-2.3.3-sources.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="103" column="42" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/dao/BookMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/dao/BookDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javasystem/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javasystem/Java/jdk1.8.0_131/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/binding/MapperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="215" column="75" selection-start-line="215" selection-start-column="60" selection-end-line="215" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/.m2/repository/com/baomidou/mybatis-plus-support/2.3.3/mybatis-plus-support-2.3.3-sources.jar!/com/baomidou/mybatisplus/entity/GlobalConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1040">
+          <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="150">
+            <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mybatisplusdemo/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mybatisplusdemo/DaoplusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="189" column="15" selection-start-line="189" selection-start-column="15" selection-end-line="189" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

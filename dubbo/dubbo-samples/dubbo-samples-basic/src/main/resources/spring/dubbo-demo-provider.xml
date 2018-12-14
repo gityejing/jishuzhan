@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!-- 1，指定当前服务/应用的名字（同样的服务名字相同，不要和其他的服务同名）-->
+    <dubbo:application name="demo-provider"/>
+
+    <!-- 2，指定注册中心的位置  -->
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"></dubbo:registry>
+
+    <!-- 
+    	3，指定同行规则（协议，端口）
+    	name:协议的名字，这里有很多种，目前写dubbo
+    	port:端口
+     -->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+	<!-- 4，暴露服务，服务的真正的实现，通过ref来引用  -->
+    <dubbo:service interface="org.apache.dubbo.samples.basic.api.DemoService" ref="demoService"/>
+    
+    <!-- 5，服务的真正的实现  -->
+    <bean id="demoService" class="org.apache.dubbo.samples.basic.impl.DemoServiceImpl"/>
+
+	<!-- 6,监控中心 -->
+	<!-- <dubbo:monitor protocol="registry"></dubbo:monitor> -->
+</beans>

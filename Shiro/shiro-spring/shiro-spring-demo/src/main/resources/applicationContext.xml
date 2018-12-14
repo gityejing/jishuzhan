@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="securityManager"
+		class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="cacheManager" ref="cacheManager" /> <!-- 进行session的缓存 -->
+		<property name="authenticator" ref="authenticator">
+		</property> <!-- 登录验证策略 -->
+		<property name="realms"> <!-- 使用的认证和授权管理 -->
+			<list>
+				<ref bean="jdbcRealm" />
+				<ref bean="secondRealm" />
+			</list>
+		</property>
+		<property name="rememberMeManager.cookie.maxAge" value="10"></property>
+	</bean>
+
+	<!-- shiro自带的缓存，放在内存中 -->
+	<!-- <bean id="cacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager"></bean> -->
+
+	<!-- 缓存管理器 -->
+	<bean id="cacheManager"
+		class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<!-- 设置ehcache缓存的配置文件 -->
+		<property name="cacheManagerConfigFile" 
+			value="classpath:ehcache.xml" />
+	</bean>
+
+	<!-- 多个认证类的策略 -->
+	<bean id="authenticator" 
+		class="org.apache.shiro.authc.pam.ModularRealmAuthenticator">
+		<property name="authenticationStrategy">
+			<bean
+				class="org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy"></bean>
+		</property>
+	</bean>
+
+	<!-- 认证类 -->
+	<bean id="jdbcRealm" class="com.atguigu.shiro.realms.ShiroRealm">
+		<property name="credentialsMatcher">
+			<bean
+				class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+				<property name="hashAlgorithmName" value="MD5"></property>
+				<property name="hashIterations" value="1024"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="secondRealm"
+		class="com.atguigu.shiro.realms.SecondRealm">
+		<!-- 指定凭证匹配器，就是就是加密的算法 -->
+		<property name="credentialsMatcher">
+			<bean
+				class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+				<property name="hashAlgorithmName" value="SHA1"></property>
+				<property name="hashIterations" value="1024"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="lifecycleBeanPostProcessor"
+		class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+	<bean
+		class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+		depends-on="lifecycleBeanPostProcessor" />
+	<bean
+		class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager" />
+	</bean>
+
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login.jsp" />
+		<property name="successUrl" value="/list.jsp" />
+		<property name="unauthorizedUrl" value="/unauthorized.jsp" />
+
+		<!-- 可以实现，从数据库中读取如下的配置，达到一种可配置的效果 -->
+		<!-- <property name="filterChainDefinitionMap" ref="filterChainDefinitionMap"></property> -->
+		<property name="filterChainDefinitions">
+			<value>
+				/login.jsp = anon
+				/shiro/login = anon
+				/shiro/logout = logout
+				/user.jsp = roles[user]
+				/admin.jsp = roles[admin]
+				/** = authc
+			</value>
+		</property>
+	</bean>
+
+	<!-- 配置一个 bean, 该 bean 实际上是一个 Map. 通过实例工厂方法的方式 -->
+	<!-- <bean id="filterChainDefinitionMap" factory-bean="filterChainDefinitionMapBuilder" 
+		factory-method="buildFilterChainDefinitionMap"> </bean> -->
+
+	<!-- <bean id="filterChainDefinitionMapBuilder" class="com.atguigu.shiro.factory.FilterChainDefinitionMapBuilder"> 
+		</bean> -->
+	<bean id="shiroService"
+		class="com.atguigu.shiro.services.ShiroService"></bean>
+</beans>

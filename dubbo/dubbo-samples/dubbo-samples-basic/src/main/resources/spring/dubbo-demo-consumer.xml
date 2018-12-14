@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!-- 1,应用名 -->
+    <dubbo:application name="demo-consumer"/>
+
+    <!-- 2，服务中心 -->
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+
+    <!-- 3，调用哪个服务 -->
+    <dubbo:reference id="demoService" check="false" interface="org.apache.dubbo.samples.basic.api.DemoService"/>
+
+	<!-- 4,监控中心 -->
+	<!-- <dubbo:monitor protocol="registry"></dubbo:monitor> -->
+</beans>

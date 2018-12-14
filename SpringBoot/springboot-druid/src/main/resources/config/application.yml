@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: root
+    password: 881213
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource  # 可以不用配置这一项，在配置了DruidConfiguration后
+    #   以下都是durid的相关配置
+    initialSize: 5
+    minIdle: 1
+    maxActive: 50
+    maxWait : 50000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: false
+    filters: stat,wall,slf4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+
+server:
+  port: 8081

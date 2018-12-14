@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.mybatis.dao.EmployeeMapper">
+	<!-- namespace:名称空间;指定为接口的全类名 id：唯一标识 resultType：返回值类型 #{id}：从传递过来的参数中取出id值 
+		public Employee getEmpById(Integer id); -->
+	<select id="getEmpById"
+		resultType="com.atguigu.mybatis.bean.Employee">
+		select id,last_name as lastName,email,gender from
+		tbl_employee where id = #{id}
+	</select>
+
+	<insert id="insertEmp"
+		parameterType="com.atguigu.mybatis.bean.Employee">
+		insert into tbl_employee(last_name,email,gender)
+		values(#{lastName},#{email},#{gender});
+	</insert>
+
+	<delete id="deleteById" parameterType="Integer">
+		delete from tbl_employee
+		where id = #{id}
+	</delete>
+
+	<delete id="deleteByIdArray" parameterType="Integer">
+		<!-- delete from tbl_employee where id in <foreach collection="idArray" 
+			open="(" separator="," close=")" item="id"> #{id} </foreach> -->
+
+		<!-- 默认情况下，数组和list参数被封装成map,其键为array -->
+		delete from tbl_employee where id in
+		<foreach collection="array" item="id" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+	<update id="updateEmp" parameterType="com.atguigu.mybatis.bean.Employee">
+		update tbl_employee
+		<!-- 最后的一个逗号，可以写，也可以不写，会自动的去掉，但是前面的逗号就必须要写  -->
+		<set>
+			<if test="lastName != null">last_name=#{lastName},</if>
+			<if test="email != email">email=#{email},</if>
+			<if test="gender != null">gender=#{gender},</if>
+			<if test="email != null">email=#{email},</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+</mapper>
