@@ -3,7 +3,10 @@ package com.git.kafka.consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.kafka.listener.MessageListener;
+import org.springframework.integration.kafka.core.KafkaMessage;
+import org.springframework.integration.kafka.listener.MessageListener;
+
+import kafka.message.Message;
 
 /**
  * kafka监听器启动
@@ -11,7 +14,7 @@ import org.springframework.kafka.listener.MessageListener;
  * @author wangb
  *
  */
-public class KafkaConsumerServer implements MessageListener<String, String> {
+public class KafkaConsumerServer implements MessageListener {
 	protected final Logger LOG = LoggerFactory.getLogger("kafkaConsumer");
 	/**
 	 * 监听器自动执行该方法
@@ -20,7 +23,7 @@ public class KafkaConsumerServer implements MessageListener<String, String> {
 	 * 	执行业务代码
 	 * 	（high level api 不提供offset管理，不能指定offset进行消费）
 	 */
-	@Override
+//	@Override
 	public void onMessage(ConsumerRecord<String, String> record) {
 		LOG.info("=============kafkaConsumer开始消费=============");
 		String topic = record.topic();
@@ -34,6 +37,12 @@ public class KafkaConsumerServer implements MessageListener<String, String> {
 		LOG.info("-------------offset:"+offset);
 		LOG.info("-------------partition:"+partition);
 		LOG.info("~~~~~~~~~~~~~kafkaConsumer消费结束~~~~~~~~~~~~~");
+	}
+	@Override
+	public void onMessage(KafkaMessage message) {
+		LOG.info("=============kafkaConsumer开始消费=============");
+		Message msg = message.getMessage();
+	
 	}
 
 }
